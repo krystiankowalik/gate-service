@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController
 
 @RestController
-@RequestMapping("/v1/double-door")
+@RequestMapping("/api/v1/double-door")
 class DoubleDoorControllerImpl(@Autowired val doubleDoorService: DoubleDoorService) : DoubleDoorController {
 
     @GetMapping("/toggle")
